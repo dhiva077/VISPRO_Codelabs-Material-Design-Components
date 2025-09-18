@@ -26,6 +26,7 @@ class Product {
     required this.isFeatured,
     required this.name,
     required this.price,
+    this.assetFileName,
   });
 
   final Category category;
@@ -33,9 +34,11 @@ class Product {
   final bool isFeatured;
   final String name;
   final int price;
+  final String? assetFileName;
 
-  String get assetName => '$id-0.jpg';
-  String get assetPackage => 'shrine_images';
+  String get assetName => assetFileName != null ? 'assets/${assetFileName!}' : '$id-0.jpg';
+  String? get assetPackage => assetFileName != null ? null : 'shrine_images';
+  
 
   @override
   String toString() => "$name (id=$id)";
