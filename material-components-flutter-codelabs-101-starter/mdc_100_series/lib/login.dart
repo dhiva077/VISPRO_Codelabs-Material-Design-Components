@@ -14,6 +14,8 @@
 
 import 'package:flutter/material.dart';
 
+import 'colors.dart';
+
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
@@ -29,24 +31,26 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFE0D6D1),
+      backgroundColor: kShrineLoginBackground,
       body: SafeArea(
         child: ListView(
-          padding: const EdgeInsets.symmetric(horizontal: 24.0),
+          padding: const EdgeInsets.symmetric(horizontal: 10.0),
           children: <Widget>[
-            const SizedBox(height: 80.0),
-            Column(
-              children: <Widget>[
-                  SizedBox(
-                    width: 150, // ukuran baru, sedikit lebih besar
-                    height: 150,
-                    child: Image.asset('assets/logo.png', fit: BoxFit.contain),
-                  ),
-                  const SizedBox(height: 16.0),
-                  const Text(''),
-              ],
-            ),
-            const SizedBox(height: 120.0),
+            const SizedBox(height: 5.0),
+          Column(
+            children: <Widget>[
+              Image.asset(
+                'assets/logo.png',
+                width: 120, // atur lebar logo di sini
+                // height: 120, // opsional, jika ingin atur tinggi juga
+              ),
+              const SizedBox(height: 5.0),
+              Text(
+                '',
+                style: Theme.of(context).textTheme.headlineSmall,
+              ),
+            ],
+          ),
             // TODO: Remove filled: true values (103)
 
             // TODO: Add TextField widgets (101)
@@ -54,29 +58,17 @@ class _LoginPageState extends State<LoginPage> {
               // [Name]
               TextField(
               controller: _usernameController,
-              decoration: InputDecoration(
-                filled: true,
-                fillColor: Color(0xFFb2a499), // warna background pakai hex
+              decoration: const InputDecoration(
+                // Removed filled: true
                 labelText: 'Username',
-                labelStyle: TextStyle(
-                  color: Colors.black,           // warna label jadi hitam pekat
-                  fontWeight: FontWeight.bold,   // opsional supaya lebih tegas
-                ),
               ),
             ),
-
             const SizedBox(height: 12.0),
-
             TextField(
               controller: _passwordController,
-              decoration: InputDecoration(
-                filled: true,
-                fillColor: Color(0xFFb2a499),
+              decoration: const InputDecoration(
+                // Removed filled: true
                 labelText: 'Password',
-                labelStyle: TextStyle(
-                  color: Colors.black,           // warna label jadi hitam pekat
-                  fontWeight: FontWeight.bold,   // opsional
-                ),
               ),
               obscureText: true,
             ),
@@ -108,28 +100,31 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               TextButton(
-                child: const Text('CANCEL'),
-                style: TextButton.styleFrom(
-                  foregroundColor: Colors.black, // warna teks tombol CANCEL
+              child: const Text('CANCEL'),
+              onPressed: () {
+                _usernameController.clear();
+                _passwordController.clear();
+              },
+              style: TextButton.styleFrom(
+                foregroundColor: Theme.of(context).colorScheme.secondary,
+                shape: const BeveledRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(7.0)),
                 ),
-                onPressed: () {
-                  // TODO: Clear the text fields (101)
-                  _usernameController.clear();
-                  _passwordController.clear();
-                },
               ),
+            ),
               const SizedBox(width: 16.0),
               ElevatedButton(
-                child: const Text('NEXT'),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Color(0xFFb2a499), // warna background tombol NEXT
-                  foregroundColor: Colors.black,      // warna teks tombol NEXT jadi hitam
-                ),
-                onPressed: () {
-                  // TODO: Show the next page (101)
-                   Navigator.pop(context);
-                },
+              child: const Text('NEXT'),
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              style: ElevatedButton.styleFrom(
+                elevation: 8.0,
+                shape: const BeveledRectangleBorder(
+                borderRadius: BorderRadius.all(Radius.circular(7.0)),
+                )
               ),
+            ),
             ],
           ),
 
