@@ -1,4 +1,4 @@
-name: shrine
+name: mdc_100_series
 description: Learn the basics of using Material Components by building a simple app with core components.
 
 environment:
@@ -22,8 +22,10 @@ flutter:
   uses-material-design: true
 
   assets:
+    - assets/logo2.png
     - assets/logo.png
     # TODO: Add slanted menu asset (104)
+    - assets/slanted_menu.png
     - assets/Buket Mawar Merah Classic.jpg
     - assets/Buket Mawar Pink.jpg
     - assets/Buket Mawar Biru Premium.jpg

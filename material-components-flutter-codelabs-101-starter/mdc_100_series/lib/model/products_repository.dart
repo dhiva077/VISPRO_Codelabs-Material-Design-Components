@@ -22,7 +22,7 @@ class ProductsRepository {
         id: 0,
         isFeatured: true,
         name: 'Buket Mawar Merah Classic',
-        price: 150000,
+        price: 150,
         assetFileName: 'Buket Mawar Merah Classic.jpg',
       ),
       Product(
@@ -30,7 +30,7 @@ class ProductsRepository {
         id: 1,
         isFeatured: true,
         name: 'Buket Mawar Pink',
-        price: 200000,
+        price: 200,
         assetFileName: 'Buket Mawar Pink.jpg',
       ),
       Product(
@@ -38,7 +38,7 @@ class ProductsRepository {
         id: 2,
         isFeatured: false,
         name: 'Buket Mawar Biru Premium',
-        price: 350000,
+        price: 350,
         assetFileName: 'Buket Mawar Biru Premium.jpg',
       ),
       Product(
@@ -46,7 +46,7 @@ class ProductsRepository {
         id: 3,
         isFeatured: true,
         name: 'Buket Tulip Mix',
-        price: 250000,
+        price: 250,
         assetFileName: 'Buket Tulip Mix.jpg',
       ),
       Product(
@@ -54,7 +54,7 @@ class ProductsRepository {
         id: 4,
         isFeatured: false,
         name: 'Buket Lili Putih',
-        price: 340000,
+        price: 340,
         assetFileName: 'Buket Lili Putih.jpg',
       ),
       Product(
@@ -62,7 +62,7 @@ class ProductsRepository {
         id: 5,
         isFeatured: false,
         name: 'Buket Anggrek Ungu',
-        price: 200000,
+        price: 200,
         assetFileName: 'Buket Anggrek Ungu.jpg',
       ),
       Product(
@@ -70,7 +70,7 @@ class ProductsRepository {
         id: 6,
         isFeatured: false,
         name: 'Bunga Gerbera Colorful',
-        price: 200000,
+        price: 200,
         assetFileName: 'Bunga Gerbera Colorful.jpg',
       ),
       Product(
@@ -78,7 +78,7 @@ class ProductsRepository {
         id: 7,
         isFeatured: true,
         name: 'Buket Mix Rose & Babys Breath',
-        price: 252000,
+        price: 252,
         assetFileName: 'Buket Mix Rose & Babys Breath.jpg',
       ),
       Product(
@@ -86,7 +86,7 @@ class ProductsRepository {
         id: 8,
         isFeatured: true,
         name: 'Buket Bunga Anyelir',
-        price: 230000,
+        price: 230,
         assetFileName: 'Buket Bunga Anyelir.jpg',
       ),
       Product(
@@ -94,7 +94,7 @@ class ProductsRepository {
         id: 9,
         isFeatured: true,
         name: 'Buket Calla Lily Putih',
-        price: 580000,
+        price: 580,
         assetFileName: 'Buket Calla Lily Putih.jpg',
       ),
       Product(
@@ -102,7 +102,7 @@ class ProductsRepository {
         id: 10,
         isFeatured: false,
         name: 'Buket Hydrangea Biru',
-        price: 180000,
+        price: 180,
         assetFileName: 'Buket Hydrangea Biru.jpg',
       ),
       Product(
@@ -110,7 +110,7 @@ class ProductsRepository {
         id: 11,
         isFeatured: false,
         name: 'Buket Daisy Putih Manis',
-        price: 280000,
+        price: 280,
         assetFileName: 'Buket Daisy Putih Manis.jpg',
       ),
       Product(
@@ -118,7 +118,7 @@ class ProductsRepository {
         id: 12,
         isFeatured: false,
         name: 'Peony Pink',
-        price: 340000,
+        price: 340,
         assetFileName: 'Peony Pink.jpg',
       ),
       Product(
@@ -126,7 +126,7 @@ class ProductsRepository {
         id: 13,
         isFeatured: true,
         name: 'Buket Mix Sunflower & Krisan',
-        price: 180000,
+        price: 180,
         assetFileName: 'Buket Mix Sunflower & Krisan.jpg',
       ),
       Product(
@@ -134,7 +134,7 @@ class ProductsRepository {
         id: 14,
         isFeatured: true,
         name: 'Lily Oriental',
-        price: 270000,
+        price: 270,
         assetFileName: 'Lily Oriental.jpg',
       ),
       Product(
@@ -142,7 +142,7 @@ class ProductsRepository {
         id: 15,
         isFeatured: true,
         name: 'Bunga Dahlia',
-        price: 260000,
+        price: 260,
         assetFileName: 'Bunga Dahlia.jpg'
       ),
       Product(
@@ -150,15 +150,15 @@ class ProductsRepository {
         id: 16,
         isFeatured: true,
         name: 'Lavender',
-        price: 160000,
+        price: 160,
         assetFileName: 'Lavender.jpg'
       ),
       Product(
         category: Category.home,
-        id: 270000,
+        id: 17,
         isFeatured: false,
         name: 'Alamanda',
-        price: 275000,
+        price: 275,
         assetFileName: 'Alamanda.jpg'
       ),
       Product(
@@ -166,7 +166,7 @@ class ProductsRepository {
         id: 18,
         isFeatured: true,
         name: 'Frangipani',
-        price: 229000,
+        price: 229,
         assetFileName: 'Frangipani.jpg'
       ),
       Product(
@@ -174,7 +174,7 @@ class ProductsRepository {
         id: 19,
         isFeatured: false,
         name: 'Amaryllis',
-        price: 430000,
+        price: 430,
         assetFileName: 'Amaryllis.jpg'
       ),
       Product(
@@ -182,7 +182,7 @@ class ProductsRepository {
         id: 20,
         isFeatured: false,
         name: 'Ranunculus',
-        price: 450000,
+        price: 450,
         assetFileName: 'Ranunculus.jpg'
       ),
       Product(
@@ -190,7 +190,7 @@ class ProductsRepository {
         id: 21,
         isFeatured: false,
         name: 'Freesia',
-        price: 380000,
+        price: 380,
         assetFileName: 'Freesia.jpg'
       ),
       Product(
@@ -198,7 +198,7 @@ class ProductsRepository {
         id: 22,
         isFeatured: false,
         name: 'Scabiosa',
-        price: 70000,
+        price: 70,
         assetFileName: 'Scabiosa.jpg'
       ),
       Product(
@@ -206,7 +206,7 @@ class ProductsRepository {
         id: 23,
         isFeatured: false,
         name: 'Calla Lily',
-        price: 70000,
+        price: 70,
         assetFileName: 'Calla Lily.jpg'
       ),
       Product(
@@ -214,7 +214,7 @@ class ProductsRepository {
         id: 24,
         isFeatured: true,
         name: 'Delphinium',
-        price: 60000,
+        price: 60,
         assetFileName: 'Delphinium.jpg'
       ),
       Product(
@@ -222,7 +222,7 @@ class ProductsRepository {
         id: 25,
         isFeatured: false,
         name: 'Bunga Matahari',
-        price: 17800,
+        price: 17,
         assetFileName: 'Bunga Matahari.jpg'
       ),
       Product(
@@ -230,7 +230,7 @@ class ProductsRepository {
         id: 26,
         isFeatured: false,
         name: 'Cornflower',
-        price: 74000,
+        price: 74,
         assetFileName: 'Cornflower.jpg'
       ),
       Product(
@@ -238,7 +238,7 @@ class ProductsRepository {
         id: 27,
         isFeatured: true,
         name: 'Sweet Pea',
-        price: 58000,
+        price: 58,
         assetFileName: 'Sweet Pea.jpg'
       ),
       Product(
@@ -246,7 +246,7 @@ class ProductsRepository {
         id: 28,
         isFeatured: true,
         name: 'Gardenia',
-        price: 48000,
+        price: 48,
         assetFileName: 'Gardenia.jpg'
       ),
       Product(
@@ -254,12 +254,12 @@ class ProductsRepository {
         id: 29,
         isFeatured: true,
         name: 'Protea',
-        price: 98000,
+        price: 98,
         assetFileName: 'Protea.jpg'
       ),
       Product(
         category: Category.clothing,
-        id: 30000,
+        id: 30,
         isFeatured: true,
         name: 'Lupin',
         price: 68,
@@ -270,7 +270,7 @@ class ProductsRepository {
         id: 31,
         isFeatured: false,
         name: 'Strelitzia',
-        price: 38000,
+        price: 38,
         assetFileName: 'Strelitzia.jpg'
       ),
       Product(
@@ -278,7 +278,7 @@ class ProductsRepository {
         id: 32,
         isFeatured: false,
         name: 'Wedding Buket',
-        price: 58000,
+        price: 58,
         assetFileName: 'Wedding Buket.jpg'
       ),
       Product(
@@ -286,7 +286,7 @@ class ProductsRepository {
         id: 33,
         isFeatured: true,
         name: 'Mawar Pink',
-        price: 32000,
+        price: 32,
         assetFileName: 'Mawar Pink.jpg'
       ),
       Product(
@@ -294,15 +294,15 @@ class ProductsRepository {
         id: 34,
         isFeatured: false,
         name: 'Bunga Scilla',
-        price: 27000,
+        price: 27,
         assetFileName: 'Bunga Scilla.jpg'
       ),
       Product(
         category: Category.clothing,
-        id: 35000,
+        id: 35,
         isFeatured: false,
         name: 'Bunga Astilbe',
-        price: 24000,
+        price: 24,
         assetFileName: 'Bunga Astilbe.jpg'
       ),
       Product(
@@ -310,7 +310,7 @@ class ProductsRepository {
         id: 36,
         isFeatured: false,
         name: 'Lily',
-        price: 58000,
+        price: 58,
         assetFileName: 'Lily.jpg'
       ),
       Product(
@@ -318,7 +318,7 @@ class ProductsRepository {
         id: 37,
         isFeatured: true,
         name: 'Mawar Putih',
-        price: 58000,
+        price: 58,
         assetFileName: 'Mawar Putih.jpg'
       ),
     ];
