@@ -23,7 +23,7 @@ ThemeData _buildShrineTheme() {
     ),
     textTheme: _buildShrineTextTheme(base.textTheme),
     textSelectionTheme: const TextSelectionThemeData(
-      selectionColor: kShrineLoginField,
+      selectionColor: kShrineLoginBackground,
     ),
     appBarTheme: const AppBarTheme(
       foregroundColor: kShrineLoginField,       // warna teks/icon AppBar
@@ -46,7 +46,8 @@ ThemeData _buildShrineTheme() {
 
 // TODO: Build a Shrine Text Theme (103)
 TextTheme _buildShrineTextTheme(TextTheme base) {
-  return base
+  // Pertama apply style global
+  final applied = base
       .copyWith(
         headlineSmall: base.headlineSmall!.copyWith(
           fontWeight: FontWeight.w500,
@@ -65,10 +66,19 @@ TextTheme _buildShrineTextTheme(TextTheme base) {
       )
       .apply(
         fontFamily: 'Rubik',
-        displayColor: kShrineLoginBackground,
-        bodyColor: kShrineLoginField,
+        displayColor: kShrineLoginField,
+        bodyColor: kShrineLoginBackground,
       );
+
+  // Override warna khusus untuk titleLarge supaya tidak ikut apply di atas
+  return applied.copyWith(
+  titleLarge: applied.titleLarge!.copyWith(
+    color: kShrineLoginField, // <- ganti ke warna yang kamu mau
+    fontWeight: FontWeight.bold,
+  ),
+);
 }
+
 
 // TODO: Convert ShrineApp to stateful widget (104)
 class ShrineApp extends StatefulWidget {
@@ -90,7 +100,7 @@ class _ShrineAppState extends State<ShrineApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Dhiva Florist',    // nama aplikasi kamu
+      title: 'Dhiva Florist',    
       initialRoute: '/login',
       routes: {
         '/login': (BuildContext context) => const LoginPage(),

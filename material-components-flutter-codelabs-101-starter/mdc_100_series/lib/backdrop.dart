@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'model/product.dart';
 import 'login.dart';
+import 'colors.dart';
 
 // TODO: Add velocity constant (104)
 const double _kFlingVelocity = 2.0;
@@ -43,6 +44,7 @@ class _FrontLayer extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       elevation: 16.0,
+      color: kShrineLoginField,
       shape: const BeveledRectangleBorder(
         borderRadius: BorderRadius.only(topLeft: Radius.circular(46.0)),
       ),
@@ -56,6 +58,7 @@ class _FrontLayer extends StatelessWidget {
             child: Container(
               height: 40.0,
               alignment: AlignmentDirectional.centerStart,
+             color: Theme.of(context).appBarTheme.shadowColor,
             ),
           ),
           Expanded(
@@ -110,7 +113,7 @@ class _BackdropTitle extends AnimatedWidget {
                   begin: Offset.zero,
                   end: const Offset(1.0, 0.0),
                 ).evaluate(animation),
-                child: const ImageIcon(AssetImage('assets/recomecha.png')),
+                child: const ImageIcon(AssetImage('assets/logo2.png')),
               )]),
           ),
         ),

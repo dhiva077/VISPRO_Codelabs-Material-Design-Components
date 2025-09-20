@@ -16,6 +16,7 @@ import 'package:flutter/material.dart';
 import 'supplemental/asymmetric_view.dart';
 import 'model/product.dart';
 import 'model/products_repository.dart';
+import 'colors.dart';
 
 
 class HomePage extends StatelessWidget {
@@ -25,7 +26,11 @@ class HomePage extends StatelessWidget {
   // TODO: Add a variable for Category (104)
   @override
   Widget build(BuildContext context) {
-    // TODO: Return an AsymmetricView (104)
-    return AsymmetricView(products: ProductsRepository.loadProducts(category));
+    return Scaffold(
+      backgroundColor: kShrineLoginField,
+      body: AsymmetricView(
+        products: ProductsRepository.loadProducts(category),
+      ),
+    );
   }
 }

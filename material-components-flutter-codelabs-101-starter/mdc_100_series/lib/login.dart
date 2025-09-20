@@ -37,7 +37,6 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // background color login page pakai warna kamu
       backgroundColor: kShrineLoginBackground,
       body: SafeArea(
         child: ListView(
@@ -55,7 +54,7 @@ class _LoginPageState extends State<LoginPage> {
                 // bisa tambah logo kedua jika ada
                 // Image.asset('assets/logolain.png'),
                 Text(
-                  'Login',
+                  '',
                   style: Theme.of(context).textTheme.headlineSmall,
                 ),
               ],
